@@ -22,7 +22,7 @@
             overflow-x: hidden;
         }
 
-        .custom-file-input ~ .custom-file-label::after{
+        .custom-file-input~.custom-file-label::after {
             content: "selecionar";
         }
     </style>
@@ -92,6 +92,7 @@
                                                     <label for="nomeContato">Nome</label>
                                                     <div class="input-group">
                                                         <div class="input-group-prepend">
+           
                                                             <div class="input-group-text">
                                                                 <i class="bi-person-circle"></i>
                                                             </div>
@@ -171,8 +172,10 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="custom-file">
-                                                                    <input class="custom-file-input" type="file" name="fotoContato" id="fotoContato">
-                                                                    <label class="custom-file-label" for="fotoContato">Escolha a Foto...</label>
+                                                                    <input class="custom-file-input" type="file"
+                                                                        name="fotoContato" id="fotoContato">
+                                                                    <label class="custom-file-label"
+                                                                        for="fotoContato">Escolha a Foto...</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -185,21 +188,177 @@
                                 <h5 class="text-primary">Telefone</h5>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-sm"></div>
-                                    <div class="col-sm"></div>
+                                    <div class="col-sm">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="telefone1Contato">Telefone</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="telefone1Contato"
+                                                            id="telefone1Contato" placeholder="(xx) xxxx-xxx" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="telefone2Contato">Telefone</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="telefone2Contato"
+                                                            id="telefone2Contato" placeholder="(xx) xxxx-xxx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="telefone3Contato">Telefone</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="telefone3Contato"
+                                                            id="telefone3Contato" placeholder="(xx) xxxx-xxx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="telefone4Contato">Telefone</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-phone"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="telefone4Contato"
+                                                            id="telefone4Contato" placeholder="(xx) xxxx-xxx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <h5 class="text-primary">Endereço</h5>
                                 <hr>
                                 <div class="row">
-                                    <div class="col-sm"></div>
+                                    <div class="col-sm">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="logradouroContato">Logradouro</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-map"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="logradouroContato"
+                                                            id="logradouroContato" placeholder="Rua, avenida, travessa e outros">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-sm"></div>
-                                    <div class="col-sm"></div>
+                                    <div class="col-sm">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="complementoContato">Complemento</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-pin"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="complementoContato"
+                                                            id="complementoContato" placeholder="Número, quadra, lote e outros" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="estadoContato">Estado</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-globe"></i>
+                                                            </div>
+                                                        </div>
+                                                       <select name="estadoContato" id="estadoContato" class="form-control" required><option value="">Escolha o Estado</option></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="bairroContato">Bairro</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-globe"></i>
+                                                            </div>
+                                                        </div>
+                                                        <input class="form-control" type="text" name="bairroContato"
+                                                            id="bairroContato" placeholder="Digite o Bairro" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <div class="form-group">
+                                                    <label for="cidadeContato">Cidade</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-prepend">
+           
+                                                            <div class="input-group-text">
+                                                                <i class="bi-globe"></i>
+                                                            </div>
+                                                        </div>
+                                                       <select name="cidadeContato" id="cidadeContato" class="form-control" required><option value="">Escolha a Cidade</option></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm text-right">
-                                        <button class="btn btn-primary" type="submit">Cadastrar</button>
+                                        <button class="btn btn-primary" type="submit">Salvar</button>
                                     </div>
                                 </div>
                             </form>
