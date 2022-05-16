@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda de Contatos</title>
+    <title>Agenda de contatos</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_pt_BR.js"></script>
     <style>
         html {
             height: 100%;
@@ -29,23 +32,23 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-header bg-white">
-                            <img style="width: 100%;" src="img/logo.jpg" alt="Agenda de Contatos">
+                            <img style="width: 100%;" src="img/logo.jpg" alt="Agenda de contatos">
                         </div>
                         <div class="card-body">
-                            <form action="main.html" id="login" method="post">
+                            <form id="login" method="post" action="main.html">
                                 <div class="form-group">
                                     <label for="mailUsuario">E-mail</label>
-                                    <input type="email" class="form-control" id="mailUsuario"
+                                    <input type="email" class="form-control" id="mailUsuario" name="mailUsuario"
                                         placeholder="Digite seu e-mail">
                                 </div>
                                 <div class="form-group">
                                     <label for="senhaUsuario">Senha</label>
-                                    <input type="password" class="form-control" id="senhaUsuario"
-                                        placeholder="Digite sua Senha">
+                                    <input type="password" class="form-control" id="senhaUsuario" name="senhaUsuario"
+                                        placeholder="Digite sua senha">
                                 </div>
                                 <div class="row">
                                     <div class="col-sm">
-                                        <button type="submit" class="btn btn-primary btn-block btn-lg">Entrar</button>
+                                        <button type="submit" class="btn-primary btn-block btn-lg">Entrar</button>
                                     </div>
                                 </div>
                             </form>
@@ -55,7 +58,7 @@
                                 <div class="row">
                                     <div class="col-sm">
                                         <a class="btn btn-success btn-block" href="novoUsuario.html">Não sou
-                                            Cadastrado</a>
+                                            cadastrado</a>
                                     </div>
                                     <div class="col-sm">
                                         <button id="esqueciSenha" class="btn btn-warning btn-block">Esqueci a
@@ -70,6 +73,34 @@
             </div>
         </div>
     </div>
+    <script>
+        jQuery.validator.setDefaults({
+            errorElement: 'span',
+            errorPlacement: function (error, element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).addClass('is-invalid');
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).removeClass('is-invalid');
+            }
+        });
+        $(document).ready(function () {
+
+            $("#login").validate({
+                rules: {
+                    mailUsuario: {
+                        required: true
+                    },
+                    senhaUsuario: {
+                        required: true
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
